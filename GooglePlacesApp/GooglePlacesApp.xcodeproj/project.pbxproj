@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2B132B2EE89F2EF91D4C845 /* Pods_GooglePlacesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4431D55416ADB43582D3EC88 /* Pods_GooglePlacesApp.framework */; };
+		C0504FB2FBA37C368C836E8B /* Pods_GooglePlacesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B4D16A7919172458111F48 /* Pods_GooglePlacesAppTests.framework */; };
+		D0E2C86CDC3A858BB8B65C1B /* Pods_GooglePlacesApp_GooglePlacesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B289C928E26530F8A64BF457 /* Pods_GooglePlacesApp_GooglePlacesAppUITests.framework */; };
+		DB6E73172B07ECCB003067E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E73162B07ECCB003067E3 /* AppDelegate.swift */; };
+		DB6E73192B07ECCB003067E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E73182B07ECCB003067E3 /* SceneDelegate.swift */; };
+		DB6E731B2B07ECCB003067E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E731A2B07ECCB003067E3 /* ViewController.swift */; };
+		DB6E731E2B07ECCB003067E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E731C2B07ECCB003067E3 /* Main.storyboard */; };
+		DB6E73202B07ECCD003067E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6E731F2B07ECCD003067E3 /* Assets.xcassets */; };
+		DB6E73232B07ECCD003067E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E73212B07ECCD003067E3 /* LaunchScreen.storyboard */; };
+		DB6E732E2B07ECCD003067E3 /* GooglePlacesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E732D2B07ECCD003067E3 /* GooglePlacesAppTests.swift */; };
+		DB6E73382B07ECCD003067E3 /* GooglePlacesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E73372B07ECCD003067E3 /* GooglePlacesAppUITests.swift */; };
+		DB6E733A2B07ECCD003067E3 /* GooglePlacesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E73392B07ECCD003067E3 /* GooglePlacesAppUITestsLaunchTests.swift */; };
+		DB6E73472B098371003067E3 /* GooglePlacesModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E73462B098371003067E3 /* GooglePlacesModelView.swift */; };
+		DB6E734B2B09A840003067E3 /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E734A2B09A840003067E3 /* DetailPlaceViewController.swift */; };
+		DB6E734D2B09A900003067E3 /* DetailPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E734C2B09A900003067E3 /* DetailPlaceViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB6E732A2B07ECCD003067E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6E730B2B07ECCB003067E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E73122B07ECCB003067E3;
+			remoteInfo = GooglePlacesApp;
+		};
+		DB6E73342B07ECCD003067E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6E730B2B07ECCB003067E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E73122B07ECCB003067E3;
+			remoteInfo = GooglePlacesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02298398A4642AEA22518F17 /* Pods-GooglePlacesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesApp.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlacesApp/Pods-GooglePlacesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4431D55416ADB43582D3EC88 /* Pods_GooglePlacesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlacesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58819704145991DB12A9C22E /* Pods-GooglePlacesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlacesAppTests/Pods-GooglePlacesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9216DA8E259FFF1DC2ECCF93 /* Pods-GooglePlacesApp-GooglePlacesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesApp-GooglePlacesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlacesApp-GooglePlacesAppUITests/Pods-GooglePlacesApp-GooglePlacesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B289C928E26530F8A64BF457 /* Pods_GooglePlacesApp_GooglePlacesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlacesApp_GooglePlacesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE77FB75BFEC6481273B12E0 /* Pods-GooglePlacesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesApp.release.xcconfig"; path = "Target Support Files/Pods-GooglePlacesApp/Pods-GooglePlacesApp.release.xcconfig"; sourceTree = "<group>"; };
+		CF0821AC18035CA90B27A982 /* Pods-GooglePlacesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesAppTests.release.xcconfig"; path = "Target Support Files/Pods-GooglePlacesAppTests/Pods-GooglePlacesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1CABE581EB71119BA1ACEB1 /* Pods-GooglePlacesApp-GooglePlacesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesApp-GooglePlacesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-GooglePlacesApp-GooglePlacesAppUITests/Pods-GooglePlacesApp-GooglePlacesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB6E73132B07ECCB003067E3 /* GooglePlacesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlacesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6E73162B07ECCB003067E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB6E73182B07ECCB003067E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB6E731A2B07ECCB003067E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB6E731D2B07ECCB003067E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB6E731F2B07ECCD003067E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB6E73222B07ECCD003067E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB6E73242B07ECCD003067E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6E73292B07ECCD003067E3 /* GooglePlacesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooglePlacesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6E732D2B07ECCD003067E3 /* GooglePlacesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesAppTests.swift; sourceTree = "<group>"; };
+		DB6E73332B07ECCD003067E3 /* GooglePlacesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooglePlacesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6E73372B07ECCD003067E3 /* GooglePlacesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesAppUITests.swift; sourceTree = "<group>"; };
+		DB6E73392B07ECCD003067E3 /* GooglePlacesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB6E73462B098371003067E3 /* GooglePlacesModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesModelView.swift; sourceTree = "<group>"; };
+		DB6E734A2B09A840003067E3 /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
+		DB6E734C2B09A900003067E3 /* DetailPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewModel.swift; sourceTree = "<group>"; };
+		F0B4D16A7919172458111F48 /* Pods_GooglePlacesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlacesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6E73102B07ECCB003067E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B132B2EE89F2EF91D4C845 /* Pods_GooglePlacesApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E73262B07ECCD003067E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0504FB2FBA37C368C836E8B /* Pods_GooglePlacesAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E73302B07ECCD003067E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E2C86CDC3A858BB8B65C1B /* Pods_GooglePlacesApp_GooglePlacesAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56D1AD9D5AEE070D95A0CAA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4431D55416ADB43582D3EC88 /* Pods_GooglePlacesApp.framework */,
+				B289C928E26530F8A64BF457 /* Pods_GooglePlacesApp_GooglePlacesAppUITests.framework */,
+				F0B4D16A7919172458111F48 /* Pods_GooglePlacesAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B402F3561D69DAAA1CE9889D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02298398A4642AEA22518F17 /* Pods-GooglePlacesApp.debug.xcconfig */,
+				CE77FB75BFEC6481273B12E0 /* Pods-GooglePlacesApp.release.xcconfig */,
+				9216DA8E259FFF1DC2ECCF93 /* Pods-GooglePlacesApp-GooglePlacesAppUITests.debug.xcconfig */,
+				D1CABE581EB71119BA1ACEB1 /* Pods-GooglePlacesApp-GooglePlacesAppUITests.release.xcconfig */,
+				58819704145991DB12A9C22E /* Pods-GooglePlacesAppTests.debug.xcconfig */,
+				CF0821AC18035CA90B27A982 /* Pods-GooglePlacesAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB6E730A2B07ECCB003067E3 = {
+			isa = PBXGroup;
+			children = (
+				DB6E73152B07ECCB003067E3 /* GooglePlacesApp */,
+				DB6E732C2B07ECCD003067E3 /* GooglePlacesAppTests */,
+				DB6E73362B07ECCD003067E3 /* GooglePlacesAppUITests */,
+				DB6E73142B07ECCB003067E3 /* Products */,
+				B402F3561D69DAAA1CE9889D /* Pods */,
+				56D1AD9D5AEE070D95A0CAA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6E73142B07ECCB003067E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E73132B07ECCB003067E3 /* GooglePlacesApp.app */,
+				DB6E73292B07ECCD003067E3 /* GooglePlacesAppTests.xctest */,
+				DB6E73332B07ECCD003067E3 /* GooglePlacesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6E73152B07ECCB003067E3 /* GooglePlacesApp */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E73162B07ECCB003067E3 /* AppDelegate.swift */,
+				DB6E73182B07ECCB003067E3 /* SceneDelegate.swift */,
+				DB6E734F2B09A920003067E3 /* GooglePlaces */,
+				DB6E734E2B09A90E003067E3 /* DetailPlace */,
+				DB6E731C2B07ECCB003067E3 /* Main.storyboard */,
+				DB6E731F2B07ECCD003067E3 /* Assets.xcassets */,
+				DB6E73212B07ECCD003067E3 /* LaunchScreen.storyboard */,
+				DB6E73242B07ECCD003067E3 /* Info.plist */,
+			);
+			path = GooglePlacesApp;
+			sourceTree = "<group>";
+		};
+		DB6E732C2B07ECCD003067E3 /* GooglePlacesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E732D2B07ECCD003067E3 /* GooglePlacesAppTests.swift */,
+			);
+			path = GooglePlacesAppTests;
+			sourceTree = "<group>";
+		};
+		DB6E73362B07ECCD003067E3 /* GooglePlacesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E73372B07ECCD003067E3 /* GooglePlacesAppUITests.swift */,
+				DB6E73392B07ECCD003067E3 /* GooglePlacesAppUITestsLaunchTests.swift */,
+			);
+			path = GooglePlacesAppUITests;
+			sourceTree = "<group>";
+		};
+		DB6E734E2B09A90E003067E3 /* DetailPlace */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E734A2B09A840003067E3 /* DetailPlaceViewController.swift */,
+				DB6E734C2B09A900003067E3 /* DetailPlaceViewModel.swift */,
+			);
+			path = DetailPlace;
+			sourceTree = "<group>";
+		};
+		DB6E734F2B09A920003067E3 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E731A2B07ECCB003067E3 /* ViewController.swift */,
+				DB6E73462B098371003067E3 /* GooglePlacesModelView.swift */,
+			);
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB6E73122B07ECCB003067E3 /* GooglePlacesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6E733D2B07ECCD003067E3 /* Build configuration list for PBXNativeTarget "GooglePlacesApp" */;
+			buildPhases = (
+				81A9AD17F25E71F270608CD8 /* [CP] Check Pods Manifest.lock */,
+				DB6E730F2B07ECCB003067E3 /* Sources */,
+				DB6E73102B07ECCB003067E3 /* Frameworks */,
+				DB6E73112B07ECCB003067E3 /* Resources */,
+				729FB0EDBFDF4EFE72C2D59F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooglePlacesApp;
+			productName = GooglePlacesApp;
+			productReference = DB6E73132B07ECCB003067E3 /* GooglePlacesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB6E73282B07ECCD003067E3 /* GooglePlacesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6E73402B07ECCD003067E3 /* Build configuration list for PBXNativeTarget "GooglePlacesAppTests" */;
+			buildPhases = (
+				CA8EC289BA97FFC1C59A564C /* [CP] Check Pods Manifest.lock */,
+				DB6E73252B07ECCD003067E3 /* Sources */,
+				DB6E73262B07ECCD003067E3 /* Frameworks */,
+				DB6E73272B07ECCD003067E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6E732B2B07ECCD003067E3 /* PBXTargetDependency */,
+			);
+			name = GooglePlacesAppTests;
+			productName = GooglePlacesAppTests;
+			productReference = DB6E73292B07ECCD003067E3 /* GooglePlacesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB6E73322B07ECCD003067E3 /* GooglePlacesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6E73432B07ECCD003067E3 /* Build configuration list for PBXNativeTarget "GooglePlacesAppUITests" */;
+			buildPhases = (
+				57D453AEFE8945FE85287140 /* [CP] Check Pods Manifest.lock */,
+				DB6E732F2B07ECCD003067E3 /* Sources */,
+				DB6E73302B07ECCD003067E3 /* Frameworks */,
+				DB6E73312B07ECCD003067E3 /* Resources */,
+				411D4D435D467407D64E5C96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6E73352B07ECCD003067E3 /* PBXTargetDependency */,
+			);
+			name = GooglePlacesAppUITests;
+			productName = GooglePlacesAppUITests;
+			productReference = DB6E73332B07ECCD003067E3 /* GooglePlacesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB6E730B2B07ECCB003067E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DB6E73122B07ECCB003067E3 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DB6E73282B07ECCD003067E3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DB6E73122B07ECCB003067E3;
+					};
+					DB6E73322B07ECCD003067E3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DB6E73122B07ECCB003067E3;
+					};
+				};
+			};
+			buildConfigurationList = DB6E730E2B07ECCB003067E3 /* Build configuration list for PBXProject "GooglePlacesApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB6E730A2B07ECCB003067E3;
+			productRefGroup = DB6E73142B07ECCB003067E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6E73122B07ECCB003067E3 /* GooglePlacesApp */,
+				DB6E73282B07ECCD003067E3 /* GooglePlacesAppTests */,
+				DB6E73322B07ECCD003067E3 /* GooglePlacesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6E73112B07ECCB003067E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6E73232B07ECCD003067E3 /* LaunchScreen.storyboard in Resources */,
+				DB6E73202B07ECCD003067E3 /* Assets.xcassets in Resources */,
+				DB6E731E2B07ECCB003067E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E73272B07ECCD003067E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E73312B07ECCD003067E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		411D4D435D467407D64E5C96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesApp-GooglePlacesAppUITests/Pods-GooglePlacesApp-GooglePlacesAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesApp-GooglePlacesAppUITests/Pods-GooglePlacesApp-GooglePlacesAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesApp-GooglePlacesAppUITests/Pods-GooglePlacesApp-GooglePlacesAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57D453AEFE8945FE85287140 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePlacesApp-GooglePlacesAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		729FB0EDBFDF4EFE72C2D59F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesApp/Pods-GooglePlacesApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesApp/Pods-GooglePlacesApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePlacesApp/Pods-GooglePlacesApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81A9AD17F25E71F270608CD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePlacesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA8EC289BA97FFC1C59A564C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePlacesAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB6E730F2B07ECCB003067E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6E73472B098371003067E3 /* GooglePlacesModelView.swift in Sources */,
+				DB6E731B2B07ECCB003067E3 /* ViewController.swift in Sources */,
+				DB6E73172B07ECCB003067E3 /* AppDelegate.swift in Sources */,
+				DB6E73192B07ECCB003067E3 /* SceneDelegate.swift in Sources */,
+				DB6E734B2B09A840003067E3 /* DetailPlaceViewController.swift in Sources */,
+				DB6E734D2B09A900003067E3 /* DetailPlaceViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E73252B07ECCD003067E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6E732E2B07ECCD003067E3 /* GooglePlacesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E732F2B07ECCD003067E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6E73382B07ECCD003067E3 /* GooglePlacesAppUITests.swift in Sources */,
+				DB6E733A2B07ECCD003067E3 /* GooglePlacesAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB6E732B2B07ECCD003067E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6E73122B07ECCB003067E3 /* GooglePlacesApp */;
+			targetProxy = DB6E732A2B07ECCD003067E3 /* PBXContainerItemProxy */;
+		};
+		DB6E73352B07ECCD003067E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6E73122B07ECCB003067E3 /* GooglePlacesApp */;
+			targetProxy = DB6E73342B07ECCD003067E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB6E731C2B07ECCB003067E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6E731D2B07ECCB003067E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB6E73212B07ECCD003067E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6E73222B07ECCD003067E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6E733B2B07ECCD003067E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB6E733C2B07ECCD003067E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6E733E2B07ECCD003067E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02298398A4642AEA22518F17 /* Pods-GooglePlacesApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JKHJALY4V;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GooglePlacesApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GooglePlacesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB6E733F2B07ECCD003067E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE77FB75BFEC6481273B12E0 /* Pods-GooglePlacesApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JKHJALY4V;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GooglePlacesApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GooglePlacesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB6E73412B07ECCD003067E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58819704145991DB12A9C22E /* Pods-GooglePlacesAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JKHJALY4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GooglePlacesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooglePlacesApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GooglePlacesApp";
+			};
+			name = Debug;
+		};
+		DB6E73422B07ECCD003067E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0821AC18035CA90B27A982 /* Pods-GooglePlacesAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JKHJALY4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GooglePlacesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooglePlacesApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GooglePlacesApp";
+			};
+			name = Release;
+		};
+		DB6E73442B07ECCD003067E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9216DA8E259FFF1DC2ECCF93 /* Pods-GooglePlacesApp-GooglePlacesAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JKHJALY4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GooglePlacesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GooglePlacesApp;
+			};
+			name = Debug;
+		};
+		DB6E73452B07ECCD003067E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CABE581EB71119BA1ACEB1 /* Pods-GooglePlacesApp-GooglePlacesAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JKHJALY4V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GooglePlacesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GooglePlacesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB6E730E2B07ECCB003067E3 /* Build configuration list for PBXProject "GooglePlacesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6E733B2B07ECCD003067E3 /* Debug */,
+				DB6E733C2B07ECCD003067E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6E733D2B07ECCD003067E3 /* Build configuration list for PBXNativeTarget "GooglePlacesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6E733E2B07ECCD003067E3 /* Debug */,
+				DB6E733F2B07ECCD003067E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6E73402B07ECCD003067E3 /* Build configuration list for PBXNativeTarget "GooglePlacesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6E73412B07ECCD003067E3 /* Debug */,
+				DB6E73422B07ECCD003067E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6E73432B07ECCD003067E3 /* Build configuration list for PBXNativeTarget "GooglePlacesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6E73442B07ECCD003067E3 /* Debug */,
+				DB6E73452B07ECCD003067E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB6E730B2B07ECCB003067E3 /* Project object */;
+}

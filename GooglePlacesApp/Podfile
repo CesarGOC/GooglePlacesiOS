@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '17.0'
+
+target 'GooglePlacesApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+   pod 'GooglePlaces', '8.3.0'
+
+  # Pods for GooglePlacesApp
+
+  target 'GooglePlacesAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GooglePlacesAppUITests' do
+    # Pods for testing
+  end
+
+end
